@@ -5,6 +5,8 @@ from gi.repository import Gtk
 class HelloWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self,title = "Hello")
+        #self.set_default_size()
+#Gtk.Window.maximize
         button = Gtk.Button(label = "Click Here")
         button.connect("clicked",self.onClick,"pavan")
         self.add(button)
